@@ -33,3 +33,10 @@ if node["sites"]
     mode "0644"
   end
 end
+
+directory "/home/vagrant/.drush" do
+  owner "vagrant"
+  group "vagrant"
+  mode "0755"
+  action :create
+end
