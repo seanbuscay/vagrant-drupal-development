@@ -10,6 +10,10 @@ Vagrant.configure("2") do |config|
 
   # Networking
   config.vm.network :private_network, ip: vdd_config["ip"]
+  
+  # SSH
+  config.ssh.private_key_path = "~/.ssh/id_rsa"
+  config.ssh.forward_agent = true
 
   # Customize provider
   config.vm.provider :virtualbox do |vb|
