@@ -8,6 +8,9 @@ Vagrant.configure("2") do |config|
   config.vm.box = "precise32"
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
+  # Forward ssh keys to allow git cloning.
+  config.ssh.forward_agent = true
+
   # Networking
   config.vm.network :private_network, ip: vdd_config["ip"]
 
