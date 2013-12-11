@@ -32,3 +32,10 @@ template "/home/vagrant/Rush/environment/params.ini" do
   owner "vagrant"
   group "vagrant"
 end
+
+template "/home/vagrant/.drush/drush.ini" do
+  source "drush_ini.erb"
+  mode "0755"
+  owner "vagrant"
+  group "vagrant"
+end
