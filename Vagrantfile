@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     # Synced Folder
     config.vm.synced_folder vdd_config["synced_folder"]["host_path"],
       vdd_config["synced_folder"]["guest_path"],
-      :nfs => vdd_config["synced_folder"]["use_nfs"]
+      :nfs => vdd_config["synced_folder"]["use_nfs"], disabled: true
   end
 
   # Customize provisioner
