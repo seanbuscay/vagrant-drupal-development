@@ -28,6 +28,7 @@
     "recipe[vdd::curl]",
     "recipe[vdd::rush]",
     "recipe[vdd::drush5]",
+    "recipe[php::module_apc]",
     "recipe[vdd::vdd_help]"
   ],
   "description": "VDD Apache, PHP, MySQL plus other tools configuration.",
