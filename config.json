@@ -4,7 +4,7 @@
   "synced_folder": {
     "host_path": "data/",
     "guest_path": "/var/www",
-    "use_nfs": false
+    "use_nfs": true
   },
   "php": {
     "version": false
